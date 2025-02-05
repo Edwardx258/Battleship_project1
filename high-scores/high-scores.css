@@ -1,0 +1,57 @@
+/* High Scores Styling */
+.high-scores {
+  text-align: center;
+  margin: 50px auto;
+  max-width: 600px;
+  padding-top: 80px;
+}
+
+.high-scores h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333; /* Dark gray for heading */
+}
+
+/* Table Styling */
+.scores-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Arial", sans-serif;
+  font-size: 1rem;
+  color: #333;
+}
+
+.scores-table thead th {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.scores-table tbody td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+/* Zebra Striping for Rows */
+.scores-table tbody tr:nth-child(odd) {
+  background-color: #f9f9f9; /* Light gray */
+}
+
+.scores-table tbody tr:nth-child(even) {
+  background-color: #fff; /* White */
+}
+
+/* Hover Effect */
+.scores-table tbody tr:hover {
+  background-color: #e0e0e0; /* Highlight row on hover */
+  transform: scale(1.02); /* Slightly enlarge */
+  transition: all 0.3s ease;
+}
+@media (max-width: 768px) {
+  .scores-table {
+    font-size: 0.9rem; /* Smaller font for smaller screens */
+  }
+}

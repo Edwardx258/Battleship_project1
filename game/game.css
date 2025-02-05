@@ -1,0 +1,141 @@
+/* Game Container */
+.game-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+  padding-top: 80px;
+}
+
+@media (max-width: 768px) {
+  .game-container {
+    grid-template-columns: 1fr; /* Stacks boards vertically */
+  }
+}
+
+/* Board Styling */
+.board {
+  background: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.board h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Enemy Table Styling */
+.enemy-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.enemy-table th {
+  background-color: lightblue;
+  padding: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.enemy-table td {
+  width: 10%;
+  height: 40px;
+  border: 1px solid #ccc;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  background-color: lightblue;
+  transition: filter 0.3s ease;
+}
+
+.enemy-table td:hover {
+  filter: brightness(90%);
+}
+
+/* Player Table Styling */
+.player-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.player-table th {
+  background-color: lightblue;
+  padding: 5px;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+
+.player-table td {
+  width: 10%;
+  height: 40px;
+  border: 1px solid #ccc;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  background-color: lightblue;
+  transition: filter 0.3s ease;
+}
+
+.player-table td:hover {
+  filter: brightness(90%);
+}
+
+/* Hit and Miss Cells */
+.enemy-table td.hit,
+.player-table td.hit {
+  background-color: #32cd32; /* Bright green for hits */
+  color: rgb(1, 91, 1);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.enemy-table td.miss,
+.player-table td.miss {
+  background-color: #ff6347; /* Bright pink/red for misses */
+  color: rgb(116, 0, 0);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Player Ship Cells */
+.player-table td.ship {
+  color: black;
+  font-weight: bold;
+}
+
+.player-table td.ship:hover {
+  filter: none; /* Prevent hover effects on ship cells */
+}
+
+/* Game Info Styling */
+.game-info {
+  grid-column: span 2;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 50px;
+}
+
+.game-info .timer {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.game-info .restart {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.game-info .restart:hover {
+  background-color: #555;
+  transform: scale(1.05);
+}

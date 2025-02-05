@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Battleship - High Scores</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="high-scores.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="navbar">
+        <div class="nav-title">Battleship</div>
+        <!-- Checkbox and label for toggling -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label">☰</label>
+        <ul class="nav-links">
+          <li><a href="/index.html" class="nav-link">Home</a></li>
+          <li><a href="/game/game.html" class="nav-link">Game</a></li>
+          <li><a href="/about/rules.html" class="nav-link">Rules</a></li>
+          <li>
+            <a href="high-scores.html" class="nav-link active">High Scores</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="high-scores">
+      <h1>High Scores</h1>
+      <table class="scores-table">
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Games Won</th>
+            <th>Games Lost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>PirateKing</td>
+            <td>10</td>
+            <td>2</td>
+          </tr>
+          <tr>
+            <td>SeaWarrior</td>
+            <td>8</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <td>BattleshipChamp</td>
+            <td>12</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>

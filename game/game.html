@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Battleship - Game</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="game.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="navbar">
+        <div class="nav-title">Battleship</div>
+        <!-- Checkbox and label for toggling -->
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="nav-toggle-label">☰</label>
+        <ul class="nav-links">
+          <li><a href="/index.html" class="nav-link">Home</a></li>
+          <li><a href="game.html" class="nav-link active">Game</a></li>
+          <li><a href="/about/rules.html" class="nav-link">Rules</a></li>
+          <li>
+            <a href="/high-scores/high-scores.html" class="nav-link"
+              >High Scores</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <h1>Sample Game</h1>
+      <!-- Updated Game HTML -->
+      <div class="game-container">
+        <!-- Enemy Board -->
+        <div class="board enemy-board">
+          <h2>Enemy Board</h2>
+          <table class="enemy-table">
+            <thead>
+              <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>E</th>
+                <th>F</th>
+                <th>G</th>
+                <th>H</th>
+                <th>I</th>
+                <th>J</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="miss">X</td>
+                <td></td>
+                <td></td>
+                <td class="miss">X</td>
+              </tr>
+              <tr>
+                <td class="hit">&#10003;</td>
+                <td class="hit">&#10003;</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="hit">&#10003;</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Player Board -->
+        <div class="board player-board">
+          <h2>Player Board</h2>
+          <table class="player-table">
+            <thead>
+              <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+                <th>E</th>
+                <th>F</th>
+                <th>G</th>
+                <th>H</th>
+                <th>I</th>
+                <th>J</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="miss">X</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="ship">&#x25CF;</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td class="miss">X</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td class="ship">&#x25CF;</td>
+                <td></td>
+                <td class="ship">&#x25CF;</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Game Info Section -->
+      <div class="game-info">
+        <p class="timer">Time: 00:03:45</p>
+        <button class="restart">Restart</button>
+      </div>
+    </div>
+  </body>
+</html>
