@@ -8,7 +8,7 @@ Youtube Link:
 
 ## GitHub Repository
 
-Check out the source code on GitHub: [Battleship GitHub Repo](https://edwardx258.github.io/Battleship_project1/index.html)
+Check out the source code on GitHub: [Battleship GitHub Repo](https://edwardx258.github.io/Battleship_project1/)
 
 ## Video Walkthrough
 
