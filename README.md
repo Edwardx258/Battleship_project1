@@ -4,11 +4,11 @@ A responsive, static website for the game "Battleship," built using only HTML an
 
 # Live Demo URL
 
-Youtube Link:
+Check out the livestream on GitHub: [Battleship GitHub Repo](https://edwardx258.github.io/Battleship_project1/)
 
 ## GitHub Repository
 
-Check out the source code on GitHub: [Battleship GitHub Repo](https://edwardx258.github.io/Battleship_project1/)
+Check out the source code on GitHub: [Battleship GitHub Repo](https://github.com/Edwardx258/Battleship_project1)
 
 ## Video Walkthrough
 
