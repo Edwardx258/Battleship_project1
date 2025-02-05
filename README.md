@@ -14,24 +14,6 @@ Check out the source code on GitHub: [Battleship GitHub Repo](https://edwardx258
 
 Watch a video walkthrough of the project: [YouTube Video](https://youtu.be/9R7ztA6mORk)
 
-# File Structure
-
-├── index.html (Home page)
-├── about/ (Folder for Rules page)
-│ ├── rules.html
-│ └── rules.css
-├── game/ (Folder for Game page)
-│ ├── game.html
-│ └── game.css
-├── high-scores/ (Folder for High Scores page)
-│ ├── high-scores.html
-│ └── high-scores.css
-├── css/ (Common CSS file)
-│ └── style.css
-├── images/ (Image assets)
-│ └── cover.jpg
-├── README.md (Project documentation)
-
 ### **1. Challenges and Overall Experience**
 
 The most challenging part of this assignment was organizing the file structure and ensuring that all relative links between pages worked correctly after moving files to separate folders. Working with **HTML** and **CSS** was straightforward at first, but achieving responsiveness and alignment across different screen sizes required extra effort. Overall, the assignment took approximately **2 hours** to complete.
